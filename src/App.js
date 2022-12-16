@@ -7,6 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 import { Cart } from './Components/Cart';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Checkout from './Components/Checkout';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route exact path='/cart' component={Cart} />
         <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
+        <Route exact path='/checkout' component={Checkout} />
+        
       </Switch>
       
       

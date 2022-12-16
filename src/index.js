@@ -8,7 +8,7 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './redux/store';
+import Store from './redux/store';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +18,7 @@ root.render(
     clientId="H9183nFRtccKi7iRqduSYBI2AFrYDaaB"
     redirectUri={window.location.origin}>
   <BrowserRouter>
-  <Provider store={store}>
+  <Provider  store={Store}>
     <App />
     </Provider>
   </BrowserRouter>

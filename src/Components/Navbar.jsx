@@ -5,17 +5,18 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 
 const Navbar = () => {
-    const state = useSelector((state) => state?.cartReducer?.cart)
+    const state = useSelector((state) => state.cart.cart)
+
     const { loginWithRedirect, logout,  isAuthenticated, user } = useAuth0();
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-light py-3">
+            <nav className="navbar navbar-expand-sm bg-light py-3">
                 <div className="container-fluid">
                     <NavLink className="navbar-brand fw-bold fs-4" to="/">Deux Amicci Store</NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">

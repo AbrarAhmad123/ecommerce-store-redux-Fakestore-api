@@ -1,5 +1,6 @@
 import React from 'react'
 import { Footer } from './Footer'
+import Product from './Product'
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Product/>
             <Footer/>
         </div>
 

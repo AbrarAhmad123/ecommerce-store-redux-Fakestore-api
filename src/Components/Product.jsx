@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import React from 'react'
 import Skeleton from "react-loading-skeleton";
 import { NavLink } from "react-router-dom";
-import { Footer } from "./Footer";
+
 
 export default function Product() {
 
@@ -107,7 +107,6 @@ export default function Product() {
                     {loading ? <Loading /> : <ShowProducts />}
                 </div>
             </div>
-            <Footer/>
         </div>
     )
 }
